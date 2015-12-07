@@ -1,0 +1,15 @@
+
+{
+  "appName": {
+    "message": "Calendar Countdown"
+  },
+  "appDesc": {
+    "message": "Your Day at a Glance."
+  },
+  "localClientId": {
+    "message": "960072147701-rjqccrnu1biojsb2a49pvp8h5hbgtfvs.apps.googleusercontent.com"
+  },
+  "prodClientId": {
+    "message": "960072147701-ijs30t9si2ga14aa6eguaj3f8d634n7b.apps.googleusercontent.com"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDesc__",
+  "default_locale": "en",
+  "version": "0.1",
+  "update_url":"http://clients2.google.com/service/update2/crx",
+  "manifest_version": 2,
+
+  "chrome_url_overrides" : {
+    "newtab" : "dashboard.html"
+  },
+
+  "background": {
+    "scripts" : ["jquery.js", "calendarCountdown.js"]
+  },
+
+  "offline_enabled": true,
+
+  "permissions": [
+    "tabs",
+    "storage",
+    "identity",
+    "https://docs.google.com/feeds/*",
+    "https://www.google.com/accounts/OAuthGetRequestToken",
+    "https://www.google.com/accounts/OAuthAuthorizeToken",
+    "https://www.google.com/accounts/OAuthGetAccessToken",
+    "https://www.googleapis.com/auth/calendar.readonly",
+    "https://apis.google.com/*"
+  ],
+
+  "icons": {
+    "16": "serious-16.png",
+    "48": "serious-48.png",
+    "128": "serious-128.png",
+    "512": "serious-512.png"
+  },
+
+  "oauth2": {
+    "client_id": "960072147701-rjqccrnu1biojsb2a49pvp8h5hbgtfvs.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar.readonly"
+    ]
+  },
+
+  "content_security_policy": "script-src 'self' 'unsafe-inline' https://ssl.google-analytics.com https://apis.google.com; object-src 'self'"
+}
